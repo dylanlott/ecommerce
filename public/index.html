@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ecommerce">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>E Commerce MEAN Stack Platform</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body ng-controller="mainCtrl">
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">MEANcommerce</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#LoginModal" class="modal-trigger">Log In</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#LoginModal" class="modal-trigger">Log In</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div id="LoginModal" class="modal">
+    <div class="modal-content">
+      <h4>MEANcommerce Login</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+<!--  main content area -->
+  <div class="container">
+    <div class="section">
+
+      <ng-view></ng-view>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">Yeah, so, we're pretty much the most pimpinest e-commerce stack around. We devote like, a whole hour a week to this project, and most of that time is spent shit talking our customers. So use our shit cause it rules.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Info</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Privacy Policy</a></li>
+            <li><a class="white-text" href="#!">Terms of Service</a></li>
+            <li><a class="white-text" href="#!">Shipping Policy</a></li>
+            <li><a class="white-text" href="#!">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Someotherbullshit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Proudly created using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+<!-- Angular  -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
+
+<!-- Angular Scripts -->
+<script src="app.js"></script>
+
+<!-- Controllers -->
+<script src="controllers/mainCtrl.js"></script>
+
+<!-- Services --> 
+
+<!-- Materialize --> 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
